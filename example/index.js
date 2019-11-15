@@ -10,11 +10,11 @@ var map = L.map('map').setView([57.7, 11.95], 15),
         }
     }).addTo(map);
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var pois = L.tileLayer.underneath('http://{s}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/' +
+var pois = L.tileLayer.underneath('https://{s}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/' +
             '{z}/{x}/{y}.vector.pbf?access_token=pk.eyJ1IjoidHNjaG9sdGVuIiwiYSI6ImNrMnhjbGR5ZTBhNWEzbXJ2MTB6YjUwcGgifQ.rHpxZ4E3shUX1L2CEDQwXg', {
                 layers: ['poi_label'],
                 lazy: true,
